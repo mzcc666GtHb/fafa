@@ -7,12 +7,15 @@
         </swiper-item>
       </block>
     </swiper>
-
     <ul class="container log-list">
       <li v-for="(log, index) in logs" :class="{ red: aa }" :key="index" class="log-item">
         <card :text="(index + 1) + ' . ' + log"></card>
       </li>
     </ul>
+    <van-button type="default">测试按钮</van-button>
+    <van-button type="primary">测试主要按钮</van-button>
+    <van-button type="warning">测试警告按钮</van-button>
+    <van-button type="danger">测试危险按钮</van-button>
   </div>
 </template>
 
